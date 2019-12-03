@@ -1,6 +1,6 @@
 public class MergeSort {
   public static void main(String[] args) {
-    int[] array = { 1, 4, 2, 1, 8, 5 };
+    int[] array = { 1, 4, 2, 1, 8, 5, 11, 3 };
     mergesort(array);
     for (int i = 0; i < array.length; i++) {
       System.out.print(array[i] + " ");
