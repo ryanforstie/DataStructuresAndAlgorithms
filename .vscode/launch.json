@@ -1,0 +1,54 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - OneDimensionArray",
+      "request": "launch",
+      "mainClass": "Arrays.OneDimensionArray"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - OneDimensionArray",
+      "request": "launch",
+      "mainClass": "Arrays.OneDimensionArray",
+      "projectName": "DataStructuresAndAlgorithms_72e5b207"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MergeSort",
+      "request": "launch",
+      "mainClass": "MergeSort",
+      "projectName": "DataStructuresAndAlgorithms_72e5b207"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - BubbleSort",
+      "request": "launch",
+      "mainClass": "BubbleSort"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - OneDimensionArray",
+      "request": "launch",
+      "mainClass": "OneDimensionArray"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SingleDimensionArray",
+      "request": "launch",
+      "mainClass": "SingleDimensionArray"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - OneDimensionArrayMain",
+      "request": "launch",
+      "mainClass": "OneDimensionArrayMain"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SingleDimensionArrayMain",
+      "request": "launch",
+      "mainClass": "SingleDimensionArrayMain"
+    }
+  ]
+}
