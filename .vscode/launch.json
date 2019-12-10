@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - TwoDimensionArrayMain",
+      "request": "launch",
+      "mainClass": "TwoDimensionArrayMain",
+      "projectName": "DataStructuresAndAlgorithms_72e5b207"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - OneDimensionArray",
       "request": "launch",
       "mainClass": "Arrays.OneDimensionArray"
