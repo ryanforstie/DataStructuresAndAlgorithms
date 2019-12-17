@@ -2,6 +2,39 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - SingleLinkedListMain",
+      "request": "launch",
+      "mainClass": "SingleLinkedListMain"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SingleLinkedListMain",
+      "request": "launch",
+      "mainClass": "SingleLinkedListMain",
+      "projectName": "DataStructuresAndAlgorithms_72e5b207"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CDLLMain",
+      "request": "launch",
+      "mainClass": "LinkedList.CDLLMain",
+      "projectName": "DataStructuresAndAlgorithms_72e5b207"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CDLLMain",
+      "request": "launch",
+      "mainClass": "CDLLMain"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - CDLLMain",
+      "request": "launch",
+      "mainClass": "CDLLMain",
+      "projectName": "DataStructuresAndAlgorithms_72e5b207"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - TwoDimensionArrayMain",
       "request": "launch",
       "mainClass": "TwoDimensionArrayMain",
