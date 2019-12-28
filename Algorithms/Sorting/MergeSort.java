@@ -1,54 +1,41 @@
 public class MergeSort {
-  public static void main(String[] args) {
-    int[] array = { 1, 4, 2, 1, 8, 5, 11, 3 };
-    mergesort(array);
-    for (int i = 0; i < array.length; i++) {
-      System.out.print(array[i] + " ");
-    }
-  }
 
-  public static void mergesort(int[] array) {
-    int[] helper = new int[array.length];
-    mergesort(array, helper, 0, array.length - 1);
-  }
+	public static void mergeSort(int[] Array, int left, int right) {
+		if (right > left) {
+			int m = (left + right) / 2;
+			mergeSort(Array, left, m);
+			mergeSort(Array, m + 1, right);
+			merge(Array, left, m, right);
+		}
+	}// end of method
 
-  public static void mergesort(int array[], int[] helper, int low, int high) {
-    if (low < high) {
-      int middle = (low + high) / 2;
-      mergesort(array, helper, low, middle); // Sort left half
-      mergesort(array, helper, middle + 1, high); // Sort right half
-      merge(array, helper, low, middle, high); // Merge them
-    }
-  }
+	static void merge(int[] A, int left, int middle, int right) {
+		int[] leftTmpArray = new int[middle - left + 2]; // Create tmp arrays
+		int[] rightTmpArray = new int[right - middle + 1];
 
-  public static void merge(int[] array, int[] helper, int low, int middle, int high) {
-    // Copy both halves into a helper array
-    for (int i = low; i <= high; i++) {
-      helper[i] = array[i];
-    }
+		for (int i = 0; i <= middle - left; i++) // Copy values from Array 'A' to these tmp arrays
+			leftTmpArray[i] = A[left + i];
+		for (int i = 0; i < right - middle; i++)
+			rightTmpArray[i] = A[middle + 1 + i];
 
-    int helperLeft = low;
-    int helperRight = middle + 1;
-    int current = low;
+		leftTmpArray[middle - left + 1] = Integer.MAX_VALUE; // Merge values and insert into Array 'A'
+		rightTmpArray[right - middle] = Integer.MAX_VALUE;
+		int i = 0, j = 0;
+		for (int k = left; k <= right; k++) {
+			if (leftTmpArray[i] < rightTmpArray[j]) {
+				A[k] = leftTmpArray[i];
+				i++;
+			} else {
+				A[k] = rightTmpArray[j];
+				j++;
+			}
+		}
+	}// end of method
 
-    // Iterate through helper array. Compare the left and right half, copying back
-    // the smaller element from the two halves into the original array.
-    while (helperLeft <= middle && helperRight <= high) {
-      if (helper[helperLeft] <= helper[helperRight]) {
-        array[current] = helper[helperLeft];
-        helperLeft++;
-      } else { // If right element is smaller than left element
-        array[current] = helper[helperRight];
-        helperRight++;
-      }
-      current++;
-    }
+	public static void printArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + "  ");
+		}
+	}// end of method
 
-    // Copy the rest of the left side of the array into the target array
-    int remaining = middle - helperLeft;
-    for (int i = 0; i <= remaining; i++) {
-      array[current + i] = helper[helperLeft + i];
-    }
-  }
-
-}
+}// end of class
