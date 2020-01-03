@@ -1,13 +1,12 @@
-package floydWarshall;
 import java.util.ArrayList;
-import node.WeightedNode;
+import Node.WeightedNode;
 
 public class FloydWarshallMain {
 
 	public static void main(String[] args) {
 		ArrayList<WeightedNode> nodeList = new ArrayList<>();
-		
-		//Create 4 Vertices: A,B,C,D
+
+		// Create 4 Vertices: A,B,C,D
 		for (int i = 0; i < 4; i++) {
 			nodeList.add(new WeightedNode("" + (char) (65 + i)));
 		}

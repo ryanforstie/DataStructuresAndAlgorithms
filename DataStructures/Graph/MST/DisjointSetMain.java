@@ -1,11 +1,10 @@
-package mst;
 import java.util.ArrayList;
-import node.WeightedNode;
+import Node.WeightedNode;
 
 public class DisjointSetMain {
 
 	public static void main(String[] args) {
-		
+
 		// Constructor for ArrayList
 		ArrayList<WeightedNode> nodeList = new ArrayList<>();
 

@@ -1,11 +1,8 @@
-package mst;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-
 import graphUtil.UndirectedEdge;
-import node.WeightedNode;
+import Node.WeightedNode;
 
 public class Kruskal {
 	ArrayList<WeightedNode> nodeList = new ArrayList<WeightedNode>();
@@ -15,12 +12,11 @@ public class Kruskal {
 		this.nodeList = nodeList;
 	}
 
-	
 	// Kruskal algo
 	void kruskal() {
 		// make disjoint sets for each node
 		DisjointSet.makeSet(nodeList);
-		
+
 		// sort the edges in ascending order
 		Comparator<UndirectedEdge> comparator = new Comparator<UndirectedEdge>() {
 			@Override
@@ -44,7 +40,6 @@ public class Kruskal {
 		System.out.println("\nTotal cost of MST: " + cost);
 	}
 
-	
 	// add a weighted undirected edge between two nodes
 	public void addWeightedUndirectedEdge(int firstIndex, int secondIndex, int weight) {
 		UndirectedEdge edge = new UndirectedEdge(nodeList.get(firstIndex - 1), nodeList.get(secondIndex - 1), weight);
