@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - StackMain",
+      "request": "launch",
+      "mainClass": "StackMain",
+      "projectName": "datastructures-algorithms_b1595c1d"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SLLMain",
+      "request": "launch",
+      "mainClass": "SLLMain",
+      "projectName": "datastructures-algorithms_b1595c1d"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DLLMain",
+      "request": "launch",
+      "mainClass": "DLLMain",
+      "projectName": "datastructures-algorithms_b1595c1d"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - SingleLinkedListMain",
       "request": "launch",
       "mainClass": "SingleLinkedListMain"
