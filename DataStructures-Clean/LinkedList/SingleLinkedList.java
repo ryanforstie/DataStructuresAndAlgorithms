@@ -7,13 +7,55 @@ public class SingleLinkedList {
 
 		public Node(int data) {
 			this.data = data;
-			this.next = null;
 		}
 	}
 
 	public Node head;
 	public Node tail;
 	public int size;
+
+	// Basic methods
+	public void append(int data) {
+		if (this.head == null) {
+			this.head = new Node(data);
+			this.size++;
+			return;
+		}
+		Node current = this.head;
+		while (current.next != null) {
+			current = current.next;
+		}
+		current.next = new Node(data);
+		this.size++;
+	}
+
+	public void prepend(int data) {
+		Node newHead = new Node(data);
+		newHead.next = this.head;
+		this.head = newHead;
+		this.size++;
+	}
+
+	public void deleteWithValue(int data) {
+		if (this.head == null) {
+			return;
+		}
+		if (head.data == data) {
+			this.head = head.next;
+			this.size--;
+			return;
+		}
+		Node current = this.head;
+		while (current.next != null) {
+			if (current.next.data == data) {
+				current.next = current.next.next;
+				this.size--;
+				return;
+			}
+			current = current.next;
+		}
+	}
+	// End of basic methods
 
 	public int getSize() {
 		return this.size;
@@ -23,7 +65,7 @@ public class SingleLinkedList {
 		return this.getSize() == 0;
 	}
 
-	public void insert(int data, int index) {
+	public void appendToIndex(int data, int index) {
 		Node newNode = new Node(data);
 		if (this.getSize() == 0) {
 			this.head = newNode;

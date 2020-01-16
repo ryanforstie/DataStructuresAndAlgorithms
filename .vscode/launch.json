@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - LLQMain",
+      "request": "launch",
+      "mainClass": "LLQMain",
+      "projectName": "datastructures-algorithms_b1595c1d"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - StackMain",
       "request": "launch",
       "mainClass": "StackMain",
