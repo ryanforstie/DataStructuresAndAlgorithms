@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CodeLens (Launch) - QuickSort",
+      "request": "launch",
+      "mainClass": "QuickSort",
+      "projectName": "datastructures-algorithms_b1595c1d"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MergeSort",
+      "request": "launch",
+      "mainClass": "MergeSort",
+      "projectName": "datastructures-algorithms_b1595c1d"
+    },
+    {
+      "type": "java",
       "name": "CodeLens (Launch) - LLQMain",
       "request": "launch",
       "mainClass": "LLQMain",
